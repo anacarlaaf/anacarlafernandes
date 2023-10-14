@@ -38,7 +38,7 @@ h1{
     cursor: pointer;
 }
 
-.contato button:hover{
+.contato button:hover{ /* altera estilo ao passar o mouse*/
     transform: scale(1.05);
     box-shadow: 0px 0px 3px #c7cccc;
 }
@@ -68,10 +68,10 @@ header > .interface { /* > seleciona a classe .interface dentro de header*/
 header a{
     color: black;
     text-decoration: none;
-    display: inline-block; /*transforma em elemento block*/
+    display: inline-block; /*transforma em elemento block para mais opções de estilo*/
 }
 
-header a:hover{
+header a:hover{ /* altera estilo ao passar o mouse*/
     transform: scale(1.05);
     text-shadow: 0px 0px 3px #c7cccc;
 }
@@ -156,7 +156,7 @@ section.projetos{
 }
 
 .projetos .projeto + .projeto {
-    margin-left: 40px; /* Adicionando margem à esquerda do segundo h3 */
+    margin-left: 40px; /* Adicionando margem à esquerda da segunda div */
 }
 
 .projetos img{
@@ -202,7 +202,7 @@ section.educacao{
 }
 
 .educacao .formacao + .formacao {
-    margin-left: 40px; /* Adicionando margem à esquerda do segundo h3 */
+    margin-left: 40px; /* Adicionando margem à esquerda da segunda div*/
 }
 
 /*CONTATO*/
@@ -224,10 +224,6 @@ form {
     justify-content: center;
     flex-direction: column;
     gap: 10px;
-}
-
-form::placeholder{
-    font-family: 'Poppins', sans-serif;
 }
 
 form input, form textarea {
@@ -282,6 +278,6 @@ footer .flex{
     transition: .2s;
 }
 
-::placeholder {
+::placeholder { /*fonte dos placeholders do formulário*/
     font-family: Arial, sans-serif;
 }
