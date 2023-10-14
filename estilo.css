@@ -1,0 +1,287 @@
+/*GERAL*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /*aplica configuração para todos os elementos;*/
+
+body{
+    background-color: #F5F2F0; /*cor de fundo*/
+    height: 100vh; /*altura padrão*/
+    scroll-behavior: smooth; /*transição suave entre os links*/
+}
+
+.interface{
+    max-width: 12800px;
+    margin: 0 auto; /*centralizar*/
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+h1{
+    font-size: 42px;
+    line-height: 40px;
+    text-align: left;
+}
+
+.contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    color:#F5F2F0;
+    font-weight: 600;
+    background-color: #8c8d98;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.contato button:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 3px #c7cccc;
+}
+
+h2.titulo {
+    color: black;
+    font-size: 38px;
+    text-align: left;
+}
+
+hr {
+    border-top: 1px solid #c7cccc;
+}
+
+/*HEADER*/
+
+header {
+    padding: 40px 4%;
+}
+
+header > .interface { /* > seleciona a classe .interface dentro de header*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+    display: inline-block; /*transforma em elemento block*/
+}
+
+header a:hover{
+    transform: scale(1.05);
+    text-shadow: 0px 0px 3px #c7cccc;
+}
+
+header nav ul{
+    list-style-type: none; /*remove os bullets da lista do menu*/
+}
+
+header nav li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/*APRESENTAÇÃO*/
+
+section.sobre {
+    padding: 40px 4%;
+    margin-top: 50px;
+}
+
+
+.sobre .apresentacao p{
+    margin: 40px 0px;
+    margin-right: 40px;
+}
+
+.sobre img{
+    width: 450px;
+}
+
+/* HABILIDADES */
+
+section.habilidades{
+    padding: 40px 4%;
+    margin-top: 50px;
+}
+
+.habilidades .caixa{
+    color: black;
+    width: 500px;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.habilidades .caixa + .caixa {
+    margin-left: 40px; /* Adicionando margem à esquerda do segundo h3 */
+}
+
+.habilidades .caixinha{ /*borda ao redor de h3*/
+    font-size: 28;
+    margin: 15px 0;
+    border: 1px solid #c7cccc;
+    padding: 20px;
+    width: 100%
+}
+
+.habilidades ul {
+    margin-top: 15px;
+    padding: 0px;
+}
+
+.habilidades li{
+    list-style-position: inside; /*alinha a lista ao h3*/
+}
+
+/*PROJETOS*/
+
+section.projetos{
+    padding: 40px 4%;
+    margin-top: 50px;
+}
+
+.projetos .projeto{
+    width: 500px;
+    justify-content: space-between;
+    border: 1px solid  #c7cccc;
+    margin: 15px 0;
+    margin-top: 40px;
+    padding: 5px;
+    width: 100%;
+    box-shadow: 3px 3px 3px #c7cccc;
+}
+
+.projetos .projeto + .projeto {
+    margin-left: 40px; /* Adicionando margem à esquerda do segundo h3 */
+}
+
+.projetos img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    justify-content: space-between;
+}
+
+.projeto a{
+    color: black;
+    text-decoration: none;
+}
+
+.projeto h3{
+    font-size: 15px;
+    font-weight: normal;
+    margin: 5px 0px 10px 3px;
+}
+
+.projeto p{
+    font-size: 10px;
+    margin: 5px 0px 10px 3px;
+}
+
+/*EDUCAÇÃO*/
+
+section.educacao{
+    padding: 40px 4%;
+    margin-top: 50px;
+}
+
+.educacao img{
+    height: 70px;
+    object-fit: cover;
+    justify-content: space-between;
+}
+
+.educacao .formacao{
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.educacao .formacao + .formacao {
+    margin-left: 40px; /* Adicionando margem à esquerda do segundo h3 */
+}
+
+/*CONTATO*/
+
+section.contato {
+    padding: 80px 4%;
+    margin-top: 50px;
+}
+
+.contato h1{
+    text-align: center;
+}
+
+form {
+    padding-top: 40px;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form::placeholder{
+    font-family: 'Poppins', sans-serif;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: #c7cccc;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .botao-enviar{
+    width: 500px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+form .botao-enviar input{
+    width: 120px;
+    background-color: #8c8d98;
+    color: black;
+    font-weight: 700px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/*RODAPÉ*/
+
+footer {
+    padding: 40px 4%;
+    background-color: #c7cccc;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+.links button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0px;
+    transition: .2s;
+}
+
+::placeholder {
+    font-family: Arial, sans-serif;
+}
